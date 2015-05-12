@@ -15,7 +15,11 @@ script:
   #- go test -race ./...
 
 addons:
-  artifacts: true
+  artifacts: 
+    debug: true
+    paths:
+    - $GOPATH/bin/*
+  
 
 branches:
   only:
