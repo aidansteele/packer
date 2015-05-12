@@ -14,6 +14,7 @@ script:
   - go get -u github.com/mitchellh/gox
   - GOMAXPROCS=2 make
   - GOMAXPROCS=2 make bin
+  - ls -R $HOME
   #- go test -race ./...
 
 addons:
@@ -26,13 +27,6 @@ addons:
 branches:
   only:
     - master
-
-notifications:
-  irc:
-    channels:
-      - "irc.freenode.org#packer-tool"
-    skip_join: true
-    use_notice: true
 
 matrix:
   fast_finish: true
