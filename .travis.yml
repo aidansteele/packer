@@ -12,6 +12,7 @@ install: make updatedeps
 
 script:
   - GOMAXPROCS=2 make
+  - GOMAXPROCS=2 make bin
   #- go test -race ./...
 
 addons:
