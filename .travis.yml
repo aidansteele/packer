@@ -21,7 +21,7 @@ addons:
   artifacts: 
     debug: true
     paths:
-    - $GOPATH/bin/*
+    - $(ls $GOPATH/bin/* | tr "\n" ":")
   
 
 branches:
