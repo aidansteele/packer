@@ -11,6 +11,7 @@ go:
 install: make updatedeps
 
 script:
+  - go get -u github.com/mitchellh/gox
   - GOMAXPROCS=2 make
   - GOMAXPROCS=2 make bin
   #- go test -race ./...
