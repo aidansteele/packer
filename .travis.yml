@@ -14,6 +14,7 @@ script:
   - go get -u github.com/mitchellh/gox
   - GOMAXPROCS=2 make
   - GOMAXPROCS=2 make bin
+  - GOMAXPROCS=2 make zip
   - ls -R $HOME
   #- go test -race ./...
 
