@@ -5,7 +5,7 @@ VETARGS?=-asmdecl -atomic -bool -buildtags -copylocks -methods \
 default: test
 
 bin:
-	@sh -c "$(CURDIR)/scripts/build.sh"
+	@XC_OS=linux XC_ARCH=amd64 sh -c "$(CURDIR)/scripts/build.sh"
 
 dev:
 	@TF_DEV=1 sh -c "$(CURDIR)/scripts/build.sh"
