@@ -10,6 +10,10 @@ bin:
 dev:
 	@TF_DEV=1 sh -c "$(CURDIR)/scripts/build.sh"
 
+zip:
+	@mkdir built
+	@zip built/packer_0.80_linux_amd64.zip /home/travis/gopath/bin/*
+
 test:
 	go test $(TEST) $(TESTARGS) -timeout=10s
 	@$(MAKE) vet

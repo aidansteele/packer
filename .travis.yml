@@ -24,7 +24,7 @@ deploy:
   secret_access_key:
     secure: koWwSPXm8coZkX7pkKALVLco9wUBszGbwyD1tSfvY5XERKGdgPaMTpi23o06ax9rI1b1WXcDhU8gxWIzPT/sKcsAVOL5b8GViPFXLN1Lgjfz80rXkL8tAWCKT3TWsN/ud6eNMjOHypWynLrg6m/le+SedihtBp7AJaP8QdpycTECI1+xNAn+evmU4Jw/lJxQLOCVp83vbDNqNoKhsILRGqhgU6LRSyXMGl9Z5kO/BmVz3fU5WdenKIOzaxzBg4he04Acwl5lH0LZIU4y1EcIkZx/idhtwTTl7TtLCy2Gctj8AMa3qIKXwo0GqFuSYvi+411HEVZ/CS4jDit6esrXssXRBxSIpLBQFlXoKJTPUM7zWuw6cTsYbn1CT0Xz4E3dhwL6rZeLt5eeDH53AZv0tFhL5YKGdVEgVQ4OZwPdvZWn20vn7j7GCgKO41iHD7w8UtewEe0BjUWA3b/FK+Zv2y+6kZdEnQ8Nh/pQeoLuzJxV1OEKWg8pItffRPOf2n8znJwyB/apmI5nvjEuDiV+eYVJtDcuxAMU4yDF+3MXLunirF5cZURkDyJsAXaLeeuLQBbnEp0h5zgRPsmw7qU+vADjZQo7uIQVX+OUidV6WELRjs/sGy+jkToijzrU5huFJxeP7smr4sG59JW8XRIklczxbiQcswZX/WXsvZi3cCw=
   bucket: ge-packer-builds
-  local-dir: "/home/travis/gopath/bin"
+  local-dir: built
   upload-dir: built
   acl: public_read
   on:
