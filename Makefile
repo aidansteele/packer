@@ -12,7 +12,7 @@ dev:
 
 zip:
 	@mkdir built
-	@zip built/packer_0.80_linux_amd64.zip /home/travis/gopath/bin/*
+	@cd /home/travis/gopath/bin/; zip packer_0.80_linux_amd64.zip *; cd -; mv /home/travis/gopath/bin/packer_0.80_linux_amd64.zip built/
 
 test:
 	go test $(TEST) $(TESTARGS) -timeout=10s
